@@ -1,12 +1,16 @@
-<h1 align='center'>Label-Pixels</h1>
-Label-Pixels is the tool for semantic segmentation of remote sensing imagery using Fully Convolutional Networks (FCNs).
-Initially, this tool developed for extracting the road network from high-resolution remote sensing imagery. 
-And now, this tool can be used to extract various features (Semantic segmentation of remote sensing imagery). 
-This is part of my MSc research work (Automatic Road Extraction from High-Resolution Remote Sensing Imagery 
-using Fully Convolutional Networks and Transfer Learning), worked under Mr. Ashutosh Kumar Jha 
-(IIRS) and Dr. Claudio Persello (University of Twente, ITC).
+<h1 align="center">Satellite Imagery Road Extraction Project</h1>
 
-### Tested on
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54114888/126111452-2023cf52-d7bb-4eab-aab4-42f4d583e3f5.png" width="" height="">
+</p>
+
+## 📜 Description:
+Developed a Software for semantic segmentation of remote sensing imagery using Fully Convolutional Networks (FCNs).
+Initially, this software developed for extracting the road network from high-resolution remote sensing imagery. 
+And now, this software can be used to extract various features (Semantic segmentation of remote sensing imagery). This project can also extract from Vector Data. 
+This is part of my Internship at ISRO (Indian SPace Research Organization)'s NRSC (National Remote Sensing Centre) campus.
+
+### Required Libraries:
 ```
 python 3.6.13
 Keras 2.3.1
@@ -17,8 +21,8 @@ scikit-learn 0.23.2
 ### Installation
 #### Clone repository
 ```commandline
-git clone https://github.com/venkanna37/Label-Pixels.git
-cd Label-Pixels
+git clone https://github.com/Akash-Ramjyothi/Satellite-Imagery-Road-Extraction.git
+cd Satellite-Imagery-Road-Extraction
 ```
 #### Setup environment
 * Create an environment and install above packages OR install with `environment.yml` file in Anaconda
@@ -32,6 +36,10 @@ cd tools
 
 <p align="center">
   <img width="900" height="370"  src="/data/methodology2.png">
+</p>
+
+<p align="center">
+  <img width="900" height="370"  src="https://user-images.githubusercontent.com/54114888/126112726-9b8e740b-bc8e-47bf-bb1a-4a050b9c92bb.png">
 </p>
 
 ###  Rasterize
@@ -172,11 +180,41 @@ python tile_predict.py --model unet_mini --input_shape 256 256 3 --weights ../tr
 
 python summary.py --model unet_mini --input_shape 256 256 3 --num_classes 3
 
-### Example Outputs
+### Sample Demo
 <p align="center">
   <img width="900" height="1300"  src="/data/mass_sota.png">
   <img width="900" height="330"  src="/data/mass_roads_and_buildings.png">
 </p>
+
+![vegas_speed](https://user-images.githubusercontent.com/54114888/126113043-97e39701-7aaf-47d3-ab53-e6f44f8e682c.jpg)
+
+## 💥 How to Contribute?
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) 
+
+- Take a look at the Existing [Issues](https://github.com/Akash-Ramjyothi/Razorpay-Payment/issues) or create your own Issues!
+- Wait for the Issue to be assigned to you after which you can start working on it.
+- Fork the Repo and create a Branch for any Issue that you are working upon.
+- Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
+- Add Screenshots to help me know what this Code is all about.
+
+## 👦 Developed By:
+<h2 align="center">Akash Ramjyothi</h2>
+<p align="center">
+  <a href="https://github.com/Akash-Ramjyothi"><img src="https://avatars.githubusercontent.com/u/54114888?v=4" width=150px height=150px /></a> 
+    
+<p align="center">
+  <a target="_blank"href="https://www.linkedin.com/in/akash-ramjyothi/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto:akash.ramjyothi@gmail.com?subject=Hello%20Akash,%20From%20Github"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.instagram.com/akash.ramjyothi/"><img src="https://img.shields.io/badge/instagram-%23D14836.svg?&style=for-the-badge&logo=instagram&logoColor=pink" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  ☎️ PH:+91 8939928002.
+</p>
+
+## 🌐 References Used:
+- https://www.sciencedirect.com/science/article/pii/S2212017316302705
+- https://ieeexplore.ieee.org/document/8964557/
+- https://www.isprs.org/proceedings/XXXVII/congress/3b_pdf/104.pdf
 
 ### Benchmark datasets
 1. Massachusetts Benchmark datasets for Roads and Buildings extraction <br/>
@@ -185,6 +223,3 @@ python summary.py --model unet_mini --input_shape 256 256 3 --num_classes 3
 2. List of Benchmark datasets for semantic segmentation, object detection from remote sensing imagery
 [https://github.com/chrieke/awesome-satellite-imagery
    -datasets](https://github.com/chrieke/awesome-satellite-imagery-datasets)
-
-#### Any problem with code?
-Open [issue](https://github.com/venkanna37/Label-Pixels/issues) or mail me :point_right:  g.venkanna37@gmail.com
