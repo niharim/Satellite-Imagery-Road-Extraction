@@ -10,7 +10,7 @@ Initially, this software developed for extracting the road network from high-res
 And now, this software can be used to extract various features (Semantic segmentation of remote sensing imagery). This project can also extract from Vector Data. 
 This is part of my Internship at ISRO (Indian SPace Research Organization)'s NRSC (National Remote Sensing Centre) campus.
 
-### Required Libraries:
+### Tested on:
 ```
 python 3.6.13
 Keras 2.3.1
